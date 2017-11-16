@@ -2,7 +2,7 @@
 
 Used on this website:
 	
-	jekyll
+	jekyll (jekyllrb.com)
 	Font Awesome (fortawesome.github.com/Font-Awesome)
 	jQuery (jquery.com)
 	html5shiv.js (@afarkas @jdalton @jon_neal @rem)
