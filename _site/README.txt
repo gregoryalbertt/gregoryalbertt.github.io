@@ -1,4 +1,4 @@
-# Website for a event by VIBE Entretenimento
+# Website for SOLARTECH, a solar energy company
 
 Used on this website:
 	
