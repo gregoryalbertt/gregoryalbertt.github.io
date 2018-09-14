@@ -2,15 +2,14 @@
 #
 
 # Site settings
-title: SolarTech
+title: SolarTechs
 description: |
-  SolarTech  
-  Soluções em Energia Solar Fotovoltaica
-owner: SolarTech # or company name
+
+owner: SolarTechs # or company name
 first_published: 2018 # if migrating another site, the year of your first publish
-email: your-email@domain.com
+email: contato@solartechs.com.br
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "http://solartechs.com.br" # the base hostname & protocol for your site
 social:
   #twitter: https://twitter.com/<username>
   #github: https://github.com/<username>
@@ -18,7 +17,7 @@ social:
   instagram: https://instagram.com/in/<username>
   facebook-official: https://facebook.com/<username>
   google-plus-square: https://plus.google.com/u/0/+<username>
-  email: /contact/
+  email: contato@solartechs.com.br
   #flickr:
   #youtube-square:
   #spotify:
