@@ -41,12 +41,28 @@ description: Solicite um Orçamento, é gratis!
 				<input type="hidden" name="_next" value="_confirmation.html" />
 				<input type="hidden" name="_language" value="pt-BR" />
 				<input type="text" name="_gotcha" style="display:none" />
+
+									<p>Não sabe o tipo de ligação? Nos envie uma cópia da sua conta de luz:</p>
+								<!-- The best place for this one is your <HEAD> tag -->
+									<script>
+										UPLOADCARE_LOCALE = "pt";
+										UPLOADCARE_TABS = "file url facebook gdrive gphotos dropbox instagram skydrive";
+										UPLOADCARE_PUBLIC_KEY = "165c7d6b642507876f23";
+									</script>
+									<script charset="utf-8" src="//ucarecdn.com/libs/widget/3.6.0/uploadcare.full.min.js"></script>
+				
+									<input type="hidden" role="uploadcare-uploader" name="content"
+									data-crop="disabled"
+									data-images-only="true" />
+
+
 				<div class="12u">
 					<ul class="actions">
 						<li><input type="submit" value="Solicitar Orçamento" class="special" /></li>
 						<li><input type="reset" value="Limpar" /></li>
 					</ul>
 				</div>
+
 			</div>
 		</form>
 	</section>
