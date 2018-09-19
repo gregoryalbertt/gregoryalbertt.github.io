@@ -5,13 +5,13 @@ description: Solicite um Orçamento, é gratis!
 ---
 
 	<section id="orcamento">
-			<h4>Formulário</h4>
+			<h3>Preencha o formulário</h3>
 		<form method="POST" action="https://formspree.io/vendas@solartechs.com.br">
 			<div class="row uniform">
-				<div class="8u 12u$(xsmall)">
+				<div class="6u 12u$(xsmall)">
 					<input type="text" name="name" required id="name" value="" placeholder="Nome" />
 				</div>
-				<div class="4u 12u$(xsmall)">
+				<div class="6u 12u$(xsmall)">
 					<input type="email" name="_replyto" required id="email" value="" placeholder="Email" />
 				</div>
 				<div class="4u 12u$(xsmall)">
@@ -28,14 +28,21 @@ description: Solicite um Orçamento, é gratis!
 				<div class="8u 12u$(xsmall)">
 					<input type="text" name="cidade" required id="cidade" value="" placeholder="Cidade" />
 				</div>
-				<div class="2u 12u$(xsmall)">
-					<input type="text" name="ddd" id="ddd" value="" placeholder="DDD" />
-				</div>
 				<div class="4u 12u$(xsmall)">
 					<input type="text" name="telefone" id="telefone" value="" placeholder="Telefone" />
 				</div>
-				<div class="6u 12u$(xsmall)">
+				<div class="4u 12u$(xsmall)">
 					<input type="text" name="consumo" required id="consumo" value="" min="0" placeholder="Consumo Médio Mensal (KWh)" />
+				</div>
+				<div class="4u 12u$(xsmall)">
+					<div class="select-wrapper">
+						<select name="tipo" id="tipo">
+							<option value="">Onde será instalado?</option>
+							<option value="residencial">Residencial</option>
+							<option value="comercial">Comercial</option>
+							<option value="rural">Rural</option>
+						</select>
+					</div>
 				</div>
 				
 				<input type="hidden" name="_next" value="_confirmation.html" />
@@ -65,4 +72,10 @@ description: Solicite um Orçamento, é gratis!
 
 			</div>
 		</form>
+	</section>
+
+	<section>
+		<h3>Ou se preferir:</h3>
+		<p>Tire uma foto da sua conta de luz e envie para o Whatsapp da SolarTechs</p>
+		<h3>(82)99925-3626</h3>
 	</section>
