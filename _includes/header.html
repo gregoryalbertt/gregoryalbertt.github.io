@@ -9,12 +9,13 @@
         <div id="menu">
           <ul>
             <li><a href="index.html">Home</a></li>
-            {% for my_page in site.pages %}
-            {% if my_page.title %}
-            <li><a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>
-            {% endif %}
-            {% endfor %}
-            <li><a href="#two">Portfólio</a></li>
+            <!-- {% for my_page in site.pages %} -->
+            <!--{% if my_page.title %}-->
+            <!--<li><a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>-->
+            <!--{% endif %}-->
+            <!--{% endfor %}-->
+            <li><a href="orcamento.html">Orçamento</a></li>
+            <li><a href="about_us.html">Sobre nós</a></li>
           </ul>
         </div>
       </li>
