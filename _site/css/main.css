@@ -1085,6 +1085,14 @@ body {
 /* Basic */
 @-ms-viewport {
   width: device-width; }
+.marcatexto {
+  box-shadow: 15px 0 0 0 #000, -5px 0 0 0 #000;
+  background: #000;
+  display: inline;
+  padding: 3px 0 !important;
+  position: relative;
+  color: #FFF; }
+
 body {
   background: #2e3842; }
   body.is-loading *, body.is-loading *:before, body.is-loading *:after {
