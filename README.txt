@@ -1,4 +1,4 @@
-# Website for SOLARTECH, a solar energy company
+# Website for SOLARTECHS, a solar energy company
 
 Used on this website:
 	
