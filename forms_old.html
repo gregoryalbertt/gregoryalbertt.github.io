@@ -1,0 +1,113 @@
+---
+layout: page_2
+title: Orçamento para energia solar
+description: Solicite um Orçamento, é gratis!
+---
+	<section id="orcamento">
+			<h3>Preencha o formulário</h3>
+		<form method="POST" action="https://formspree.io/vendas@solartechs.com.br">
+			<div class="row uniform">
+				<div class="6u 12u$(xsmall)">
+					<input type="text" name="name" required id="name" value="" placeholder="Nome" />
+				</div>
+				<div class="6u 12u$(xsmall)">
+					<input type="email" name="_replyto" required id="email" value="" placeholder="Email" />
+				</div>
+				<div class="4u 12u$(xsmall)">
+					<div class="select-wrapper">
+						<select name="tipo" id="tipo">
+							<option value="">Onde será instalado?</option>
+							<option value="residencial">Residencial</option>
+							<option value="comercial">Comercial</option>
+							<option value="rural">Rural</option>
+						</select>
+					</div>
+				</div>
+				<div class="8u 12u$(xsmall)">
+					<input type="text" name="cidade" required id="cidade" value="" placeholder="Cidade" />
+				</div>
+				<div class="4u 12u$(xsmall)">
+					<input type="text" name="telefone" id="telefone" value="" placeholder="Telefone" />
+				</div>
+				<div class="4u 12u$(xsmall)">
+					<input type="text" name="consumo" required id="consumo" value="" min="0" placeholder="Consumo Médio Mensal (KWh)" />
+				</div>
+				<div class="4u 12u$(xsmall)">
+					<div class="select-wrapper">
+						<select name="ligacao" id="ligacao">
+							<option value="">Qual o tipo de ligação?</option>
+							<option value="mono">Monofásica</option>
+							<option value="bi">Bifásica</option>
+							<option value="tri">Trifásica</option>
+							<option value="nsei">Não sei</option>
+						</select>
+					</div>
+				</div>
+
+				<input type="hidden" name="_next" value="confirmation.html" />
+				<input type="hidden" name="_language" value="pt-BR" />
+				<input type="text" name="_gotcha" style="display:none" />
+
+									<p>Não sabe o tipo de ligação? Nos envie uma cópia da sua conta de luz:</p>
+								<!-- The best place for this one is your <HEAD> tag -->
+									<script>
+										UPLOADCARE_LOCALE = "pt";
+										UPLOADCARE_TABS = "file url facebook gdrive gphotos dropbox instagram skydrive";
+										UPLOADCARE_PUBLIC_KEY = "165c7d6b642507876f23";
+									</script>
+									<script charset="utf-8" src="//ucarecdn.com/libs/widget/3.6.0/uploadcare.full.min.js"></script>
+				
+									<input type="hidden" role="uploadcare-uploader" name="content"
+									data-crop="disabled"
+									data-images-only="true" />
+
+
+				<div class="12u">
+					<ul class="actions">
+						<li><input type="submit" value="Solicitar Orçamento" class="special" /></li>
+						<li><input type="reset" value="Limpar" /></li>
+					</ul>
+				</div>
+
+			</div>
+		</form>
+	</section>
+
+	<section>
+		<h3>Ou se preferir:</h3>
+		<p>Tire uma foto da sua conta de luz e envie para o <a href="https://api.whatsapp.com/send?phone=5582988988885&text=Olá,%20gostaria%20de%20solicitar%20um%20orçamento">Whatsapp</a> da SolarTechs</p>
+	</section>
+
+	<h1>Energia solar em Alagoas!</h1>
+
+	<h2>Como é feito o orçamento?</h2>
+
+	<p>A nossa equipe realizará um estudo a partir do perfil de consumo informado pelo cliente,
+		esse perfil é baseado na média do consumo e em sua distribuição durante o ano.
+		A geração de energia pelos painéis solares (<i>placas solares</i>) instaladas tem uma
+		distribuição não uniforme durante o ano, uma vez que há meses mais chuvosos, onde
+		a geração de energia é reduzida. Todos esses fatores são levados em conta.
+	</p>
+
+	<h1>Instalação de placa solar em Maceió Alagoas</h1>
+
+	<h2>E se eu quiser aumentar o consumo com o tempo?</h2>
+
+	<p>Essa pergunta é muito importante uma vez que o sistema solar fotovoltaico tem vida útil
+		mínima de 25 anos. Mas você pode ficar tranquilo, o gerador de energia solar fotovoltaica
+		é escalável, isto é, é possível expandi-lo no futuro.
+	</p>
+
+	<h2>Esse orçamento é final?</h2>
+	
+	<p>
+		<b>Não!</b> É importante ressaltar que esse orçamento é prévio, uma vez que existem fatores
+		como por exemplo: a área de telhado disponível para instalação dos painéis solares, a orientação
+		do telhado (norte, sul...), a existência de sombreamento no telhado. Todos esses fatores são levados
+		em conta no orçamento final, e só são observados em uma visita técnica no local de instalação.
+	</p>
+
+	<ul class="actions">
+			<li><a href="{{ site.baseurl }}/" target="" class="button">Voltar à página inicial</a></li>
+			<li><a href="about_us.html" target="" class="button">Conheça nossa empresa</a></li>
+		</ul>

@@ -20,11 +20,11 @@
     
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <title>Solartechs - Energia Solar em Alagoas</title>
+      <title>Orçamento para energia solar</title>
+      <meta name="description" content="Solicite um orçamento de energia solar fotovoltaica em Alagoas e economize com instalação de placa solar">
       <!-- <meta name="description" content="Empresa de energia solar em alagoas">-->
-      <meta name="description" content="Empresa de instalação de placas solares em Maceió alagoas, economize com energia solar">
       <!--[if lte IE 8]><script src="/js/ie/html5shiv.js"></script><![endif]-->
-      <link rel="canonical" href="http://localhost:4000/about_us.html">
+      <link rel="canonical" href="http://localhost:4000/forms_old.html">
       <link rel="stylesheet" href="/css/main.css" />
       <link rel="shortcut icon" type="image/png" href="/favicon.ico"/>
       <meta property="og:locale" content="pt_BR">
@@ -101,88 +101,120 @@
       <article id="main">
 
   <header>
-    <h2>Solartechs - Energia Solar em Alagoas</h2>
-    <p>Alagoas tem agora mais uma empresa do setor de Energia Solar Fotovoltaica!</p>
+    <h2>Orçamento para energia solar</h2>
+    <p>Solicite um Orçamento, é gratis!</p>
   </header>
 
   <section class="wrapper style5">
     <div class="inner">
-      <h1>Energia solar em Alagoas!</h1>
+      	<section id="orcamento">
+			<h3>Preencha o formulário</h3>
+		<form method="POST" action="https://formspree.io/vendas@solartechs.com.br">
+			<div class="row uniform">
+				<div class="6u 12u$(xsmall)">
+					<input type="text" name="name" required id="name" value="" placeholder="Nome" />
+				</div>
+				<div class="6u 12u$(xsmall)">
+					<input type="email" name="_replyto" required id="email" value="" placeholder="Email" />
+				</div>
+				<div class="4u 12u$(xsmall)">
+					<div class="select-wrapper">
+						<select name="tipo" id="tipo">
+							<option value="">Onde será instalado?</option>
+							<option value="residencial">Residencial</option>
+							<option value="comercial">Comercial</option>
+							<option value="rural">Rural</option>
+						</select>
+					</div>
+				</div>
+				<div class="8u 12u$(xsmall)">
+					<input type="text" name="cidade" required id="cidade" value="" placeholder="Cidade" />
+				</div>
+				<div class="4u 12u$(xsmall)">
+					<input type="text" name="telefone" id="telefone" value="" placeholder="Telefone" />
+				</div>
+				<div class="4u 12u$(xsmall)">
+					<input type="text" name="consumo" required id="consumo" value="" min="0" placeholder="Consumo Médio Mensal (KWh)" />
+				</div>
+				<div class="4u 12u$(xsmall)">
+					<div class="select-wrapper">
+						<select name="ligacao" id="ligacao">
+							<option value="">Qual o tipo de ligação?</option>
+							<option value="mono">Monofásica</option>
+							<option value="bi">Bifásica</option>
+							<option value="tri">Trifásica</option>
+							<option value="nsei">Não sei</option>
+						</select>
+					</div>
+				</div>
 
-<h2>Conheça a nossa empresa!</h2>
+				<input type="hidden" name="_next" value="confirmation.html" />
+				<input type="hidden" name="_language" value="pt-BR" />
+				<input type="text" name="_gotcha" style="display:none" />
 
-<p>Fundada em 2018, a SolarTechs é uma empresa que atua no Estado de Alagoas,
-	 desenvolvendo soluções em energia solar fotovoltaica.
-</p>
+									<p>Não sabe o tipo de ligação? Nos envie uma cópia da sua conta de luz:</p>
+								<!-- The best place for this one is your <HEAD> tag -->
+									<script>
+										UPLOADCARE_LOCALE = "pt";
+										UPLOADCARE_TABS = "file url facebook gdrive gphotos dropbox instagram skydrive";
+										UPLOADCARE_PUBLIC_KEY = "165c7d6b642507876f23";
+									</script>
+									<script charset="utf-8" src="//ucarecdn.com/libs/widget/3.6.0/uploadcare.full.min.js"></script>
+				
+									<input type="hidden" role="uploadcare-uploader" name="content"
+									data-crop="disabled"
+									data-images-only="true" />
 
-<p>Nascemos com o objetivo de atender a demanda por fontes de energias limpas e renováveis,
-	e temos o compromisso em ser uma empresa que respeita o cliente e preserva a natureza.
-</p>
 
-<p>Atendemos em todas as cidades do Estado, <a href="orcamento.html"> Solicite um orçamento
-	 </a> e receba um estudo personalizado para geração de energia solar em sua residência!
-	 Contamos com uma equipe preparada para te atender! 
-</p>
+				<div class="12u">
+					<ul class="actions">
+						<li><input type="submit" value="Solicitar Orçamento" class="special" /></li>
+						<li><input type="reset" value="Limpar" /></li>
+					</ul>
+				</div>
 
-<h2>Missão</h2>
-<p>Contribuir para um futuro mais sustentável,
-		através do desenvolvimento de projetos e instalações
-		de sistemas de energia renováveis, buscando aliar o
-		mais alto padrão de qualidade com o melhor custo
-		benefício.</p>
-
-<h2>Visão</h2>
-<p>Ser uma empresa consolidada, de referência no
-		mercado alagoano e reconhecida pela qualidade das
-		soluções e serviços prestados.
-		</p> 
-
-<h2>Valores</h2>
-		<div class="row">
-			<div >
-			<div >
-				<ol>
-					<li>Preço justo</li>
-					<li>Inovação</li>
-					<li>Ética</li>
-					<li>Responsabilidade</li>
-					<li>Compromisso com o desenvolvimento sustentável</li>
-				</ol>
 			</div>
-		</div>
-		</div>
-
-
-	<section class="spotlight">
-			<div class="image"><img src="images/How_Solar_Power_Works.png" title="Funcionamento da energia solar" alt="Como funciona energia solar fotovoltaica" /></div><div class="content">
-				<h2>Como funciona a energia solar?</h2>
-				<p> 	As células fotovoltaicas que compõem os painéis solares (conhecidos popularmente como
-						placas solares) passam por um processo de conversão de energia solar, de forma que
-					   os elétrons presentes no nas células (que gerlmente são compostas de silício ou outro
-					   semicondutor) os elétrons entram em movimento quando a luz solar incide sobre elas</p>
-			</div>
+		</form>
 	</section>
-<i><b><h1>Empresa de energia solar em alagoas</h1></b></i>
-	<section class="spotlight">
-			<div class="image"><img src="images/Advantages.jpg" title="vantagens da energia solar" alt="Energia solar em alagoas" /></div><div class="content">
-				<h2>Quais as vantagens da energia solar?</h2>
-				<p> 	A energia solar tem muitas vantagens, é fonte renovável e inesgotável de energia,
-					ou seja, não acaba nunca! É uma energia limpa, dessa forma, não polui o meio ambiente!
-					A manutenção dos equipamentos é fácil e de baixo custo. Diga adeus ao da conta de energia!
-					<a href="https://api.whatsapp.com/send?phone=5582988988885&text=Olá,%20gostaria%20de%20ter%20mais%20informações%20sobre%20geração%20de%20energia%20solar%20fotovoltaica">
-					 Entre em contato</a> conosco agora mesmo e tire todas as suas dúvidas!	Estaremos disponíveis para bem te atender!
-				</p>
-			</div>
+
+	<section>
+		<h3>Ou se preferir:</h3>
+		<p>Tire uma foto da sua conta de luz e envie para o <a href="https://api.whatsapp.com/send?phone=5582988988885&text=Olá,%20gostaria%20de%20solicitar%20um%20orçamento">Whatsapp</a> da SolarTechs</p>
 	</section>
 
-	<br />
+	<h1>Energia solar em Alagoas!</h1>
 
+	<h2>Como é feito o orçamento?</h2>
 
+	<p>A nossa equipe realizará um estudo a partir do perfil de consumo informado pelo cliente,
+		esse perfil é baseado na média do consumo e em sua distribuição durante o ano.
+		A geração de energia pelos painéis solares (<i>placas solares</i>) instaladas tem uma
+		distribuição não uniforme durante o ano, uma vez que há meses mais chuvosos, onde
+		a geração de energia é reduzida. Todos esses fatores são levados em conta.
+	</p>
 
-		<ul class="actions">
-				<li><a href="/" target="" class="button">Voltar à página inicial</a></li>
-				<li><a href="orcamento.html" target="" class="button special">Solicite um orçamento!</a></li>
-			</ul>
+	<h1>Instalação de placa solar em Maceió Alagoas</h1>
+
+	<h2>E se eu quiser aumentar o consumo com o tempo?</h2>
+
+	<p>Essa pergunta é muito importante uma vez que o sistema solar fotovoltaico tem vida útil
+		mínima de 25 anos. Mas você pode ficar tranquilo, o gerador de energia solar fotovoltaica
+		é escalável, isto é, é possível expandi-lo no futuro.
+	</p>
+
+	<h2>Esse orçamento é final?</h2>
+	
+	<p>
+		<b>Não!</b> É importante ressaltar que esse orçamento é prévio, uma vez que existem fatores
+		como por exemplo: a área de telhado disponível para instalação dos painéis solares, a orientação
+		do telhado (norte, sul...), a existência de sombreamento no telhado. Todos esses fatores são levados
+		em conta no orçamento final, e só são observados em uma visita técnica no local de instalação.
+	</p>
+
+	<ul class="actions">
+			<li><a href="/" target="" class="button">Voltar à página inicial</a></li>
+			<li><a href="about_us.html" target="" class="button">Conheça nossa empresa</a></li>
+		</ul>
     </div>
   </section>
 
