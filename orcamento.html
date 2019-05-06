@@ -15,6 +15,7 @@ description: Solicite um Orçamento, é gratis!
 			<input type='text' style='display:none;' name='xmIwtLD' value='c5a0e1b04cff0788d7806a634a9d680a7ba3606581d1bb7c4681d7fd33554ad8'/>
 			<input type='text' style='display:none;'  name='actionType' value='TGVhZHM='/>
 
+
 			<input type='text' style='display:none;' name='returnURL' value='https&#x3a;&#x2f;&#x2f;solartechs.com.br&#x2f;confirmation.html' /> 
 			 <!-- Do not remove this code. -->
 
@@ -96,7 +97,7 @@ description: Solicite um Orçamento, é gratis!
 					<p id="SingleLine_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
 				</div>
 
-				<div class="4u 12u$(xsmall)">
+				{% comment %} <div class="4u 12u$(xsmall)">
 						<div class="select-wrapper" >
 							<select name="Industry" checktype="c1">
 								<option selected="true" value="-Select-">Como prefere ser contatado?</option>
@@ -104,7 +105,7 @@ description: Solicite um Orçamento, é gratis!
 								<option value='Telefone'>Telefone</option>
 							</select>
 						</div>
-					</div>
+				</div> {% endcomment %}
 
 				<div class="5u 12u$(xsmall)">
 						<input fieldType=9 type="text" maxlength="255" name="Email" placeholder="Email"
@@ -131,13 +132,13 @@ description: Solicite um Orçamento, é gratis!
 					</div>
 				</div>
 
-				<div class="8u 12u$(xsmall)">
+				{% comment %} <div class="8u 12u$(xsmall)">
 					<input type="text" maxlength="255" name="Street" checktype="c1" placeholder="Rua" />
 				</div>
 
 				<div class="4u 12u$(xsmall)">
 					<input type="text" maxlength="255" name="Zip Code" checktype="c1" placeholder="CEP" />
-				</div>
+				</div> {% endcomment %}
 
 				<div class="4u 12u$(xsmall)">
 					<input type="text" maxlength="255" name="City" checktype="c1" placeholder="Cidade" />
