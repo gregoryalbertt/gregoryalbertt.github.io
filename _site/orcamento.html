@@ -255,7 +255,7 @@
 
 				<div class="12u">
 					<ul class="actions">
-						<li><input type="submit" value="Solicitar Orçamento" class="special" /></li>
+						<li><input type="submit" value="Solicitar Orçamento" class="special" onclick="return validateForm()" /></li>
 						<li><input type="reset" value="Limpar" /></li>
 					</ul>
 				</div>
@@ -363,6 +363,17 @@
 						 }
 					 }
 					  }
+
+					function validateForm(){
+
+					var z = document.forms["WebToLeads3413812000000269004"]["No of Employees"].value;
+
+					if(!/^[0-9]+$/.test(z)){
+						alert("Por favor insira apenas números no consumo!")
+						return false;
+					}
+
+				}
 					
 			 </script>
 
