@@ -372,6 +372,26 @@
 						alert("Por favor insira apenas números no consumo!")
 						return false;
 					}
+	 
+					var check = 0;
+					var emailValue = document.forms["WebToLeads3413812000000269004"]["Email"].value;
+					if (emailValue != null && !emailValue == "") {
+							var emailArray = emailValue.split(",");
+							for (i = 0; i < emailArray.length; i++) {
+									var emailExp = /^[\w]([\w\-.+'/]*)@([a-zA-Z0-9]([a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?\.)+[a-zA-Z]{2,22}$/;
+									if (!emailExp.test(emailArray[i].replace(/^\s+|\s+$/g, ''))) {
+											check = 1;
+									}
+							}
+							if (check == 0) {
+									return true;
+							} else {
+									alert("Informe um email válido")
+									return false;
+							}
+					} else {
+							return true;
+					}
 
 				}
 					
