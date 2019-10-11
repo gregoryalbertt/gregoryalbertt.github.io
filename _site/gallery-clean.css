@@ -4,20 +4,24 @@
     font: normal 16px sans-serif;
 } */
 
-.gallery-container h1 {
+.thumbnail {
+    background-color: transparent;
+}
+
+/* .gallery-container h1 {
     text-align: center;
     margin-top: 70px;
     font-family: 'Droid Sans', sans-serif;
     font-weight: bold;
-    color: #58595a;
-}
+    color: #ffffff;
+} */
 
-.gallery-container p.page-description {
+/* .gallery-container p.page-description {
     text-align: center;
     margin: 30px auto;
-    font-size: 18px;
-    color: #85878c;
-} */
+    font-size: 25px;
+    color: #ffffff;
+} */ */
 
 /* Styles for the gallery */
 
@@ -47,11 +51,16 @@
 }
 
 .tz-gallery .caption{
-    font-size: 12px;
-    color: #7b7d7d;
+    font-size: 14px;
+    color: #ffffff;
     margin: 0;
 }
 
 .baguetteBox-button {
-    background-color: #7b7d7d;
+    background-color: transparent;
 }
+
+/* .gallery-background {
+    background-color: #0f4357;
+    width: 100%;
+} */
