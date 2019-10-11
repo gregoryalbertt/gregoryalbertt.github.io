@@ -1,8 +1,8 @@
-body {
+/* body {
     background-color: rgb(31, 49, 88);
     min-height: 100vh;
     font: normal 16px sans-serif;
-}
+} */
 
 .gallery-container h1 {
     text-align: center;
@@ -53,5 +53,5 @@ body {
 }
 
 .baguetteBox-button {
-    background-color: transparent !important;
+    background-color: #7b7d7d;
 }
