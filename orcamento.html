@@ -178,7 +178,7 @@ description: Solicite um Orçamento, é gratis!
 			</div>
 
 
-			<script>
+			<!-- <script>
 				var mndFileds=new Array('First Name','Last Name','Email','Mobile','Industry','No of Employees','Rating','City');
 				var fldLangVal=new Array('Primeiro Nome','Sobrenome','E-mail','Celular','Como prefere ser contatado?','Consumo','Tipo de Ligação','Cidade');
 				 var name='';
@@ -279,7 +279,74 @@ description: Solicite um Orçamento, é gratis!
 				 }
 				  }
 				
-		 </script>
+		 </script> -->
+
+		 <script>
+			var mndFileds=new Array('First Name','Last Name','LEADCF3','LEADCF51','LEADCF1','LEADCF2');
+			var fldLangVal=new Array('Sobrenome','Primeiro Nome','Como prefere ser contatado?','Consumo','Onde Será Instalado?','Tipo de Ligação'); 
+			 var name='';
+			 var email='';
+	 
+			function checkMandatory3797469000000242019() {
+			 for(i=0;i<mndFileds.length;i++) {
+			   var fieldObj=document.forms['WebToLeads3797469000000242019'][mndFileds[i]];
+			   if(fieldObj) {
+				 if (((fieldObj.value).replace(/^\s+|\s+$/g, '')).length==0) {
+				  if(fieldObj.type =='file')
+					 { 
+					  alert('Selecione um ficheiro para carregar.'); 
+					  fieldObj.focus(); 
+					  return false;
+					 } 
+				 alert(fldLangVal[i] +' não pode estar em branco.'); 
+						   fieldObj.focus();
+						   return false;
+				 }  else if(fieldObj.nodeName=='SELECT') {
+						  if(fieldObj.options[fieldObj.selectedIndex].value=='-None-') {
+					 alert(fldLangVal[i] +' não pode estar em branco.'); 
+					 fieldObj.focus();
+					 return false;
+					}
+				 } else if(fieldObj.type =='checkbox'){
+					 if(fieldObj.checked == false){
+					 alert('Please accept  '+fldLangVal[i]);
+					 fieldObj.focus();
+					 return false;
+					} 
+				  } 
+				  try {
+					  if(fieldObj.name == 'Last Name') {
+					 name = fieldObj.value;
+						}
+				 } catch (e) {}
+				 }
+			 }
+			  return validateFileUpload();
+	 
+			 document.getElementById('formsubmit').disabled=true;
+		 }function validateFileUpload(){
+			  var uploadedFiles = document.getElementById('theFile'); 
+			  var totalFileSize =0; 
+			  if(uploadedFiles.files.length >3){ 
+				  alert('Pode carregar, no máximo, três ficheiros de cada vez.'); 
+				  return false; 
+			  } 
+			  if ('files' in uploadedFiles) { 
+				  if (uploadedFiles.files.length != 0) { 
+					  for (var i = 0; i < uploadedFiles.files.length; i++) { 
+						  var file = uploadedFiles.files[i]; 
+						  if ('size' in file) { 
+							  totalFileSize = totalFileSize + file.size; 
+						  } 
+					  } 
+					  if(totalFileSize > 20971520){ 
+						  alert('O tamanho total do(s) ficheiro(s) não deve exceder 20MB.'); 
+						  return false; 
+					  } 
+				  } 
+			  } 
+		  }
+	 </script>
 
 		</form>
 
